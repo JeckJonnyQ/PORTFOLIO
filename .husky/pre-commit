@@ -1,0 +1,4 @@
+# PORTFOLIO/.husky/pre-commit
+
+cd PORTFOLIO
+npm run lint
