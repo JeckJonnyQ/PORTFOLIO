@@ -1,12 +1,21 @@
 import './App.css';
+import Header from './Components/Header/Header';
+import SectionH from './Components/SectionH/SectionH';
+import SectionA from './Components/SectionA/SectionA';
+import SectionB from './Components/SectionB/SectionB';
+import SectionC from './Components/SectionC/SectionC';
+
+import { HeaderLinks } from './helpers/staticHeaderLinks';
 
 function App() {
   return (
-    <h1 style={{ color: 'white' }}>
-      Start PortfolioStart PortfolioStart PortfolioStart PortfolioStart PortfolioStart PortfolioStart PortfolioStart
-      PortfolioStart PortfolioStart PortfolioStart PortfolioStart PortfolioStart PortfolioStart PortfolioStart
-      PortfolioStart PortfolioStart PortfolioStart PortfolioStart PortfolioStart PortfolioStart PortfolioStart Portfolio
-    </h1>
+    <>
+      <Header links={HeaderLinks} />
+      <SectionH />
+      <SectionA />
+      <SectionB />
+      <SectionC />
+    </>
   );
 }
 

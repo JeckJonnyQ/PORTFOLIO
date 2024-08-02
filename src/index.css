@@ -6,5 +6,11 @@
 
 body {
   display: flex;
-  background-color: rgb(18, 18, 18);
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  background-color: blanchedalmond;
+}
+
+li {
+  list-style-type: none;
 }
