@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Components/Header/Header';
-import SectionH from './Components/SectionH/SectionH';
+import SectionHome from './Components/SectionHome/SectionHome';
 import SectionA from './Components/SectionA/SectionA';
 import SectionB from './Components/SectionB/SectionB';
 import SectionC from './Components/SectionC/SectionC';
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header links={HeaderLinks} />
-      <SectionH />
+      <SectionHome />
       <SectionA />
       <SectionB />
       <SectionC />

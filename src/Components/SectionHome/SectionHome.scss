@@ -1,0 +1,120 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: rgb(18, 18, 18);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+    padding: 203px 140px 280px;
+    max-width: 1620px;
+    width: 100%;
+
+    @media (max-width: 1440px) {
+      padding: 203px 30px 280px;
+    }
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .home__content {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      max-width: 630px;
+
+      .home__content_title {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 100px;
+        line-height: 105px;
+        text-align: end;
+        color: #e37816;
+        text-transform: uppercase;
+      }
+
+      .home__content_description {
+        margin: 20px 0px 40px;
+        font-size: 30px;
+        color: rgb(175, 176, 182);
+        text-align: end;
+      }
+
+      .home__content_link {
+        position: relative;
+        max-width: 180px;
+        width: 100%;
+        padding: 15px 15px;
+        border: 2px solid rgb(175, 176, 182);
+        border-radius: 50px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        transition: all 0.5s ease;
+
+        &:hover {
+          box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          transform: translateY(-50%) rotate(45deg);
+          width: 10px;
+          height: 10px;
+          border-top: 2px solid rgba(255, 255, 255, 0.9);
+          border-right: 2px solid rgba(255, 255, 255, 0.9);
+        }
+      }
+    }
+
+    .home__animation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 370px;
+      height: 370px;
+
+      @media (max-width: 1200px) {
+        display: none;
+      }
+
+      circle.dark {
+        fill: rgba(0, 0, 0, 0);
+        stroke-width: 12px;
+        stroke: rgba(200, 100, 50, 0.5);
+        stroke-dasharray: 1360px;
+        stroke-dashoffset: 0px;
+        animation: 20s circles linear infinite;
+        stroke-linecap: round;
+      }
+
+      circle.dark:nth-child(odd) {
+        stroke: rgba(255, 255, 0, 0.5);
+        stroke-linecap: round;
+      }
+
+      @keyframes circles {
+        0% {
+          stroke-dashoffset: 0px;
+        }
+        50% {
+          stroke-width: 1px;
+        }
+        100% {
+          stroke-dashoffset: -9000px;
+        }
+      }
+
+      @keyframes RotateCC {
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
+    }
+  }
+}

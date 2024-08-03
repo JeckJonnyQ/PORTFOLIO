@@ -8,9 +8,12 @@ body {
   display: flex;
   font-family: 'Manrope', sans-serif;
   font-style: normal;
-  background-color: blanchedalmond;
 }
 
 li {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }

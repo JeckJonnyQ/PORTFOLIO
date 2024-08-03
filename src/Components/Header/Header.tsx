@@ -11,11 +11,18 @@ interface HeaderProps {
 export default function Header({ links }: HeaderProps): ReactElement {
   return (
     <div className="header">
-      <nav className="navbar">
-        <ul className="navbar__content">
+      <nav className="nav">
+        <ul className="nav__list">
           {links.map((item) => (
-            <li className="navbar__content_link" key={item.id}>
-              <Link to={item.path} spy={true} smooth={true} offset={-100} duration={500}>
+            <li className="nav__list_item" key={item.id}>
+              <Link
+                className="nav__list_item-link"
+                to={item.path}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
                 {item.label}
               </Link>
             </li>
