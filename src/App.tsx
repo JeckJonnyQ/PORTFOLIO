@@ -1,18 +1,18 @@
 import './App.css';
 import Header from './Components/Header/Header';
 import SectionHome from './Components/SectionHome/SectionHome';
-import SectionA from './Components/SectionA/SectionA';
+import SectionAbout from './Components/SectionAbout/SectionAbout';
 import SectionB from './Components/SectionB/SectionB';
 import SectionC from './Components/SectionC/SectionC';
 
-import { HeaderLinks } from './helpers/staticHeaderLinks';
+import { HeaderLinks } from './helpers/staticDataHeader';
 
 function App() {
   return (
     <>
       <Header links={HeaderLinks} />
       <SectionHome />
-      <SectionA />
+      <SectionAbout />
       <SectionB />
       <SectionC />
     </>

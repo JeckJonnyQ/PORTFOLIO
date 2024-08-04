@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import './Header.scss';
 
-import { HeaderLinksProps } from '../../helpers/staticHeaderLinks';
+import { HeaderLinksProps } from '../../helpers/staticDataHeader';
 import { Link } from 'react-scroll';
 
 interface HeaderProps {
