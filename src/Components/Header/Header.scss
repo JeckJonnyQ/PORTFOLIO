@@ -23,9 +23,17 @@
       justify-content: space-between;
       flex-grow: 0.2;
 
+      @media (max-width: 768px) {
+        flex-grow: 1;
+      }
+
       .nav__list_item {
         font-size: 25px;
         color: rgb(128, 128, 128);
+
+        @media (max-width: 520px) {
+          font-size: 18px;
+        }
 
         .nav__list_item-link {
           cursor: pointer;
@@ -45,6 +53,13 @@
               height: 15px;
               border-radius: 50%;
               background-color: rgb(255, 138, 0);
+            }
+
+            @media (max-width: 520px) {
+              &::before {
+                width: 10px;
+                height: 10px;
+              }
             }
           }
         }

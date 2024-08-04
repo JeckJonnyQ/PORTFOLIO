@@ -14,6 +14,14 @@
       font-weight: 700;
       text-transform: uppercase;
       color: rgb(175, 176, 182);
+
+      @media (max-width: 1040px) {
+        font-size: 25px;
+      }
+
+      @media (max-width: 520px) {
+        font-size: 18px;
+      }
     }
 
     .about__greets {
@@ -22,6 +30,15 @@
       font-weight: 600;
       color: rgb(255, 255, 255);
       text-transform: uppercase;
+
+      @media (max-width: 1280px) {
+        margin: 5px 0px 20px;
+        font-size: 40px;
+      }
+
+      @media (max-width: 1040px) {
+        font-size: 30px;
+      }
     }
 
     .about__location,
@@ -32,6 +49,11 @@
       font-size: 20px;
       font-weight: 400;
       color: rgb(255, 255, 255);
+
+      @media (max-width: 1040px) {
+        margin: 0px;
+        font-size: 15px;
+      }
 
       &::before {
         position: absolute;
@@ -57,6 +79,11 @@
       align-items: center;
       margin: 40px 0px 100px;
 
+      @media (max-width: 1040px) {
+        flex-direction: column;
+        margin: 40px 0px 60px;
+      }
+
       .wrapper__photo {
         display: flex;
         justify-content: center;
@@ -64,6 +91,15 @@
         margin: 0px 150px 0px 0px;
         max-width: 680px;
         width: 100%;
+
+        @media (max-width: 1280px) {
+          margin: 0px 120px 0px 0px;
+        }
+
+        @media (max-width: 1040px) {
+          margin: 0px 0px 40px 0px;
+          max-width: 480px;
+        }
 
         .wrapper__photo_img {
           display: block;
@@ -89,14 +125,29 @@
           font-weight: 400;
           color: rgb(255, 255, 255);
 
+          @media (max-width: 1280px) {
+            margin: 0px 0px 15px;
+            padding: 0px 0px 0px 40px;
+            font-size: 22px;
+          }
+
           &::before {
             position: absolute;
-            content: url('../../assets/Icons/IconInfo.png');
+            content: '';
+            background: url('../../assets/Icons/IconInfo.png');
             display: block;
+            background-size: cover;
             width: 40px;
             height: 40px;
             left: 0px;
             top: 1px;
+          }
+
+          @media (max-width: 1280px) {
+            &::before {
+              width: 30px;
+              height: 30px;
+            }
           }
         }
 
@@ -106,6 +157,11 @@
           font-weight: 400;
           text-align: justify;
           color: rgb(175, 176, 182);
+
+          @media (max-width: 1280px) {
+            margin: 0px 0px 30px;
+            font-size: 17px;
+          }
         }
 
         .inner__contacts {
@@ -127,6 +183,14 @@
               font-weight: 500;
               line-height: 150%;
               color: rgb(255, 255, 255);
+
+              @media (max-width: 1280px) {
+                font-size: 16px;
+              }
+
+              @media (max-width: 500px) {
+                font-size: 14px;
+              }
             }
 
             .contacts__email-block_link,
@@ -136,6 +200,14 @@
               line-height: 150%;
               color: rgb(175, 176, 182);
               cursor: pointer;
+
+              @media (max-width: 1280px) {
+                font-size: 18px;
+              }
+
+              @media (max-width: 500px) {
+                font-size: 14px;
+              }
             }
           }
         }
