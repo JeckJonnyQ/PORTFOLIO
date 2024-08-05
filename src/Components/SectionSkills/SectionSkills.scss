@@ -1,0 +1,127 @@
+.skills {
+  background-color: rgb(21, 22, 24);
+  padding: 0px 30px;
+
+  .container {
+    margin: 0 auto;
+    padding: 60px 0px;
+    max-width: 1620px;
+    width: 100%;
+
+    @media (max-width: 1040px) {
+      padding: 15px 0px 40px;
+    }
+
+    .skills__title {
+      position: relative;
+      padding: 0px 0px 0px 50px;
+      font-size: 30px;
+      font-weight: 400;
+      color: rgb(255, 255, 255);
+
+      @media (max-width: 1280px) {
+        font-size: 22px;
+        padding: 0px 0px 0px 40px;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        background: url('../../assets/Icons/IconInfo.png');
+        display: block;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+        left: 0px;
+        top: 0px;
+      }
+
+      @media (max-width: 1280px) {
+        &::before {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    .skills__desc {
+      margin: 20px 0px 60px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      color: rgb(175, 176, 182);
+
+      @media (max-width: 1280px) {
+        margin: 15px 0px 40px;
+        font-size: 17px;
+      }
+    }
+
+    .skills__block {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 90px;
+      margin: 0 auto;
+      max-width: 1400px;
+      width: 100%;
+      font-size: 20px;
+      color: white;
+      width: 100%;
+
+      @media (max-width: 1460px) {
+        padding: 0px 30px;
+        gap: 60px;
+      }
+
+      @media (max-width: 1280px) {
+        gap: 45px;
+      }
+
+      @media (max-width: 1040px) {
+        gap: 35px;
+      }
+
+      @media (max-width: 768px) {
+        padding: 0px;
+        gap: 17px;
+      }
+
+      .skills__block-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .skills__block-inner_icon {
+          margin-bottom: 8px;
+          max-width: 64px;
+          width: 100%;
+
+          @media (max-width: 1280px) {
+            width: 48px;
+          }
+
+          @media (max-width: 768px) {
+            width: 32px;
+          }
+
+          @media (max-width: 560px) {
+            width: 24px;
+          }
+        }
+
+        .skills__block-inner_title {
+          font-size: 18px;
+
+          @media (max-width: 768px) {
+            font-size: 14px;
+          }
+
+          @media (max-width: 560px) {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
