@@ -3,8 +3,8 @@ import Header from './Components/Header/Header';
 import SectionHome from './Components/SectionHome/SectionHome';
 import SectionAbout from './Components/SectionAbout/SectionAbout';
 import SectionSkills from './Components/SectionSkills/SectionSkills';
-import SectionB from './Components/SectionB/SectionB';
-import SectionC from './Components/SectionC/SectionC';
+import SectionPortfolio from './Components/SectionPortfolio/SectionPortfolio';
+import Footer from './Components/Footer/Footer';
 
 import { HeaderLinks } from './helpers/staticDataHeader';
 
@@ -15,8 +15,8 @@ function App() {
       <SectionHome />
       <SectionAbout />
       <SectionSkills />
-      <SectionB />
-      <SectionC />
+      <SectionPortfolio />
+      <Footer />
     </>
   );
 }

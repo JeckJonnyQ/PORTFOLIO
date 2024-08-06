@@ -18,6 +18,10 @@
     max-width: 1620px;
     width: 100%;
 
+    @media (max-width: 768px) {
+      margin: 0px 15px;
+    }
+
     .nav__list {
       display: flex;
       justify-content: space-between;
@@ -30,6 +34,10 @@
       .nav__list_item {
         font-size: 25px;
         color: rgb(128, 128, 128);
+
+        @media (max-width: 1280px) {
+          font-size: 20px;
+        }
 
         @media (max-width: 520px) {
           font-size: 18px;

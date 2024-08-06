@@ -31,7 +31,7 @@ function SectionAbout(): ReactElement {
                   <h4 className={`contacts__${item.classTitle}`}>{item.title}</h4>
                   <a
                     className={`contacts__${item.classLink}`}
-                    href={`${item.linkType}:${contactInfo.email}`}
+                    href={`${item.linkType}:${item.content}`}
                     target="_blank"
                   >
                     {item.content}

@@ -1,0 +1,132 @@
+.footer {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+    padding: 60px 0px;
+    max-width: 1620px;
+    width: 100%;
+
+    @media (max-width: 1280px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0px 15px;
+      padding: 40px 0px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 500px;
+      width: 100%;
+
+      .footer__title {
+        margin: 0px 0px 40px;
+        font-family: 'Manrope', sans-serif;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 60px;
+        color: rgb(227, 120, 22);
+        text-transform: uppercase;
+
+        @media (max-width: 1280px) {
+          margin: 0px 0px 20px;
+        }
+
+        @media (max-width: 768px) {
+          margin: 0px;
+          font-size: 40px;
+        }
+      }
+
+      .footer__content {
+        font-family: 'Manrope', sans-serif;
+        font-size: 20px;
+        line-height: 28px;
+        color: rgb(175, 176, 182);
+        text-align: center;
+
+        @media (max-width: 768px) {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+
+      .footer__title-social,
+      .footer__title-contacts {
+        margin: 0px 0px 40px;
+        padding: 15px 0px;
+        font-family: 'Manrope', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+
+        @media (max-width: 1280px) {
+          margin: 0px;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+
+      .footer__title-social_links {
+        padding: 17px 0px;
+
+        @media (max-width: 768px) {
+          padding: 0px;
+        }
+      }
+
+      .footer__title-contacts_links {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          position: relative;
+          padding: 7px 0px 7px 35px;
+          font-size: 20px;
+          text-decoration: none;
+          color: rgb(175, 176, 182);
+
+          @media (max-width: 768px) {
+            padding: 7px 0px 7px 25px;
+            font-size: 18px;
+          }
+
+          &::before {
+            position: absolute;
+            content: '';
+            background-size: cover;
+            top: 10px;
+            left: 0;
+            width: 25px;
+            height: 25px;
+
+            @media (max-width: 768px) {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        a:first-child::before {
+          background-image: url('../../assets/Icons/IconMail.png');
+        }
+
+        a:last-child::before {
+          background-image: url('../../assets/Icons/IconCalling.png');
+        }
+      }
+    }
+  }
+}

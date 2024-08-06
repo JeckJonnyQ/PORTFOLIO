@@ -9,6 +9,10 @@
     max-width: 1620px;
     width: 100%;
 
+    @media (max-width: 768px) {
+      margin: 0px 15px;
+    }
+
     .about__title {
       font-size: 30px;
       font-weight: 700;
@@ -81,7 +85,7 @@
 
       @media (max-width: 1040px) {
         flex-direction: column;
-        margin: 40px 0px 15px;
+        margin: 40px 0px 0px;
       }
 
       .wrapper__photo {
@@ -173,12 +177,21 @@
           justify-content: flex-start;
           align-items: center;
 
+          @media (max-width: 1040px) {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
           .inner__contacts_email-block,
           .inner__contacts_phone-block {
             display: flex;
             flex-direction: column;
             max-width: 368px;
             width: 100%;
+
+            @media (max-width: 1040px) {
+              margin-bottom: 15px;
+            }
 
             .contacts__email-block_title,
             .contacts__phone-block_title {
@@ -189,6 +202,7 @@
               color: rgb(255, 255, 255);
 
               @media (max-width: 1280px) {
+                margin: 0px 0px 5px 0px;
                 font-size: 16px;
               }
 

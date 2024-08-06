@@ -32,7 +32,7 @@ export const SkillsData: SkillsDataTypes[] = [
   },
   {
     id: 3,
-    title: 'Sass/Scss',
+    title: 'Sass',
     content: SASS,
   },
   {
