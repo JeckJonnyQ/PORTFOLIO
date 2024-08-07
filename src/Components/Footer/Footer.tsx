@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import './Footer.scss';
 import { Box, Link, Stack, Typography } from '@mui/material';
 
-import { FooterContent, SocialIcons } from '../../helpers/staticFooter';
+import { FooterContent, SocialIcons } from '../../helpers/staticDataFooter';
 
 function Footer(): ReactElement {
   return (

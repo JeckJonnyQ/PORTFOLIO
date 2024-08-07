@@ -1,6 +1,8 @@
-import LinkdIn from '../assets/Icons/LinkdIn.png';
+import IconFooterTelegram from '../assets/Icons/IconFooterTelegram.png';
+import IconFooterGitHub from '../assets/Icons/IconFooterGitHub.png';
+import IconFooterLinkdIn from '../assets/Icons/IconFooterLinkdIn.png';
 
-import { SocialIconTypes, FooterContentTypes } from '../types/SectionFooter';
+import { FooterContentTypes, SocialIconTypes } from '../types/SectionFooter';
 
 export const FooterContent: FooterContentTypes = {
   title: 'Contact me!',
@@ -17,19 +19,19 @@ export const FooterContent: FooterContentTypes = {
 export const SocialIcons: SocialIconTypes[] = [
   {
     id: 'Telegram',
-    icon: LinkdIn,
+    icon: IconFooterTelegram,
     alt: 'TelegramIcon',
     href: 'https://t.me/JeckJonny',
   },
   {
     id: 'GitHub',
-    icon: LinkdIn,
+    icon: IconFooterGitHub,
     alt: 'GitHubIcon',
     href: 'https://github.com/JeckJonnyQ',
   },
   {
     id: 'LinkedIn',
-    icon: LinkdIn,
+    icon: IconFooterLinkdIn,
     alt: 'LinkedInIcon',
     href: 'https://www.linkedin.com/in/vladislav-reut-466b48317/',
   },
