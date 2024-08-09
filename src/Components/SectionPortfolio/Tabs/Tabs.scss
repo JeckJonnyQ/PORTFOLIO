@@ -1,0 +1,67 @@
+.MuiBox-root.css-8atqhb {
+  .css-1gsv261 {
+    padding: 15px;
+    max-width: 610px;
+    width: 100%;
+    border: 1px solid rgb(28, 28, 33);
+    border-radius: 50px;
+    background-color: rgb(7, 7, 8);
+
+    @media (max-width: 1040px) {
+      padding: 5px;
+      max-width: 408px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 3px;
+      max-width: 350px;
+    }
+
+    .css-1ujnqem-MuiTabs-root {
+      min-height: 0;
+      .css-jpln7h-MuiTabs-scroller {
+        .css-heg063-MuiTabs-flexContainer {
+          justify-content: space-between;
+
+          .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+            padding: 18px 25px;
+            border: 1px solid rgb(47, 47, 55);
+            border-radius: 100px;
+            min-width: 0;
+            min-height: 0;
+            font-family: 'Manrope', sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+            color: white;
+            text-transform: none;
+            letter-spacing: 0;
+            background-color: rgb(28, 28, 33);
+            transition: all 0.5s ease;
+
+            &:hover {
+              background-color: rgb(41, 41, 48);
+            }
+
+            @media (max-width: 1040px) {
+              padding: 8px 12px;
+              font-size: 17px;
+            }
+
+            @media (max-width: 768px) {
+              padding: 8px 12px;
+              font-size: 14px;
+            }
+          }
+
+          .Mui-selected {
+            background-color: rgb(45, 32, 21);
+          }
+        }
+
+        .css-1aquho2-MuiTabs-indicator {
+          display: none;
+        }
+      }
+    }
+  }
+}
