@@ -2,18 +2,15 @@
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  position: relative;
 
   .container {
     display: flex;
     justify-content: space-between;
     margin: 0px 30px;
-    padding: 203px 140px 280px;
+    padding: 203px 140px 190px;
     max-width: 1620px;
     width: 100%;
-
-    @media (max-width: 768px) {
-      margin: 0px 15px;
-    }
 
     @media (max-width: 1440px) {
       padding: 203px 30px 280px;
@@ -26,10 +23,6 @@
     }
 
     @media (max-width: 768px) {
-      padding: 10px 0px 50px;
-    }
-
-    @media (max-width: 520px) {
       padding: 20px 0px 40px;
     }
 
@@ -127,43 +120,72 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 370px;
-      height: 370px;
+      width: 450px;
+      height: 450px;
+      position: relative;
 
       @media (max-width: 1200px) {
         display: none;
       }
 
-      circle.dark {
-        fill: rgba(0, 0, 0, 0);
-        stroke-width: 12px;
-        stroke: rgba(200, 100, 50, 0.5);
-        stroke-dasharray: 1360px;
-        stroke-dashoffset: 0px;
-        animation: 20s circles linear infinite;
-        stroke-linecap: round;
+      svg,
+      .effects {
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        height: 450px;
+        width: 450px;
       }
 
-      circle.dark:nth-child(odd) {
-        stroke: rgba(255, 255, 0, 0.5);
-        stroke-linecap: round;
-      }
-
-      @keyframes circles {
+      @keyframes background-animation {
         0% {
-          stroke-dashoffset: 0px;
+          background: #45062e;
+        }
+        20% {
+          background: #590842;
+        }
+        35% {
+          background: #5e083e;
         }
         50% {
-          stroke-width: 1px;
+          background: #590842;
+        }
+        70% {
+          background: #59084e;
+        }
+        90% {
+          background: #35041f;
         }
         100% {
-          stroke-dashoffset: -9000px;
+          background: #45062e;
         }
       }
 
-      @keyframes RotateCC {
-        100% {
-          transform: rotate(-360deg);
+      svg {
+        background: #45062e;
+        animation: background-animation 15s linear infinite;
+      }
+
+      .effects {
+        background: radial-gradient(circle, transparent 0%, rgb(18, 18, 18) 60%);
+        height: 450px;
+        width: 450px;
+      }
+
+      path {
+        stroke-dasharray: 600;
+        stroke-dashoffset: 0;
+        animation: dash 60s linear infinite;
+      }
+
+      @keyframes dash {
+        from {
+          stroke-dashoffset: 6000;
+        }
+        to {
+          stroke-dashoffset: 0;
         }
       }
     }

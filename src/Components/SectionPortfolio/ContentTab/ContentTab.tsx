@@ -9,12 +9,18 @@ function TabContent(props: TabsDataProps): ReactElement {
     <Box className="tab-content">
       <Box className="tab-content__block">
         <Typography variant="h2" className="tab-content__block_title">
-          {props.workName}
+          {props.name}
         </Typography>
         <Typography className="tab-content__block_desc">{props.description}</Typography>
 
         <Box className="tab-content__block_skills">
           {props.skills && props.skills.map((item, index) => <span key={index}>{item}</span>)}
+        </Box>
+
+        <Box className="tab-content__link_tablet">
+          <Link href={props.link} target="_blank">
+            <img src={props.photo} alt={props.name} />
+          </Link>
         </Box>
 
         <Box className="tab-content__block-inner">
@@ -27,7 +33,7 @@ function TabContent(props: TabsDataProps): ReactElement {
 
       <Box className="tab-content__link">
         <Link href={props.link} target="_blank">
-          <img src={props.photo} alt={props.workName} />
+          <img src={props.photo} alt={props.name} />
         </Link>
       </Box>
     </Box>
