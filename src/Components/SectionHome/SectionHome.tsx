@@ -2,10 +2,21 @@ import { ReactElement } from 'react';
 import './SectionHome.scss';
 
 import { linkPath } from '../../helpers/staticDataLinks';
+import { SocialIcons } from '../../helpers/staticDataFooter';
 
 function SectionHome(): ReactElement {
   return (
     <div className="home" id="home">
+      {/* <div className="background"></div> */}
+
+      <div className="home-social">
+        {SocialIcons.map((item) => (
+          <a key={item.id} href={item.href} className="home-social__link" target="_blank">
+            <img src={item.iconHome} alt={item.alt} className="home-social__link_icon" />
+          </a>
+        ))}
+      </div>
+
       <div className="container">
         <div className="home__content">
           <h1 className="home__content_title">Vladislav Reut</h1>

@@ -1,6 +1,12 @@
-import IconFooterTelegram from '../assets/Icons/IconFooterTelegram.png';
-import IconFooterGitHub from '../assets/Icons/IconFooterGitHub.png';
-import IconFooterLinkdIn from '../assets/Icons/IconFooterLinkdIn.png';
+import TelegramIconFooter from '../assets/Icons/IconFooterTelegram.png';
+import GitHubIconFooter from '../assets/Icons/IconFooterGitHub.png';
+import LinkdInIconFooter from '../assets/Icons/IconFooterLinkdIn.png';
+import DiscordIconFooter from '../assets/Icons/IconFooterDiscord.png';
+
+import TelegramIconHome from '../assets/Icons/HomeSocialTlegram.png';
+import GitHubIconHome from '../assets/Icons/HomeSocialGit.png';
+import LinkedInIconHome from '../assets/Icons/HomeSocialLinkedIn.png';
+import DiscordIconHome from '../assets/Icons/HomeSocialDisc.png';
 
 import { FooterContentTypes, SocialIconTypes } from '../types/SectionFooter';
 
@@ -19,20 +25,30 @@ export const FooterContent: FooterContentTypes = {
 export const SocialIcons: SocialIconTypes[] = [
   {
     id: 'Telegram',
-    icon: IconFooterTelegram,
+    iconHome: TelegramIconHome,
+    iconFooter: TelegramIconFooter,
     alt: 'TelegramIcon',
     href: 'https://t.me/JeckJonny',
   },
   {
     id: 'GitHub',
-    icon: IconFooterGitHub,
+    iconHome: GitHubIconHome,
+    iconFooter: GitHubIconFooter,
     alt: 'GitHubIcon',
     href: 'https://github.com/JeckJonnyQ',
   },
   {
     id: 'LinkedIn',
-    icon: IconFooterLinkdIn,
+    iconHome: LinkedInIconHome,
+    iconFooter: LinkdInIconFooter,
     alt: 'LinkedInIcon',
     href: 'https://www.linkedin.com/in/vladislav-reut-466b48317/',
+  },
+  {
+    id: 'Discord',
+    iconHome: DiscordIconHome,
+    iconFooter: DiscordIconFooter,
+    alt: 'Discord',
+    href: 'https://discordapp.com/users/457605217027096576/',
   },
 ];

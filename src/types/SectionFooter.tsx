@@ -11,7 +11,8 @@ export interface FooterContentTypes {
 
 export interface SocialIconTypes {
   id: string;
-  icon: string;
+  iconHome: string;
+  iconFooter: string;
   alt: string;
   href: string;
 }

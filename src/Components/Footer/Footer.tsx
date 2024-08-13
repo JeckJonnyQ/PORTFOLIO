@@ -33,7 +33,11 @@ function Footer(): ReactElement {
                   },
                 }}
               >
-                <img src={social.icon} alt={social.alt} style={{ display: 'block', width: '50px', height: '50px' }} />
+                <img
+                  src={social.iconFooter}
+                  alt={social.alt}
+                  style={{ display: 'block', width: '50px', height: '50px' }}
+                />
               </Link>
             ))}
           </Stack>
