@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 import './SectionPortfolio.scss';
 
 import BasicTabs from './Tabs/Tabs';
+import { linkPath } from '../../helpers/staticDataLinks';
 
 function SectionPortfolio(): ReactElement {
   return (
@@ -12,6 +13,12 @@ function SectionPortfolio(): ReactElement {
         <p className="portfolio__info">Some of the noteworthy projects I have built:</p>
 
         <BasicTabs />
+
+        <div className="portfolio__wrapper">
+          <a href={linkPath.linkPathToCV} target="_blank" className="portfolio__wrapper_link">
+            View All Works
+          </a>
+        </div>
       </div>
     </div>
   );

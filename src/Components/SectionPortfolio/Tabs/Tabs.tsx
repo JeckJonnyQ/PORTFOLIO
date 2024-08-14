@@ -15,11 +15,11 @@ export default function BasicTabs() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange}>
-          <Tab label="Web Sites" />
-          <Tab label="Browser Games" />
-          <Tab label="Landing Pages" />
+      <Box className="box-wrapper">
+        <Tabs value={value} onChange={handleChange} className="tabs">
+          <Tab className="tab" label="Web Sites" />
+          <Tab className="tab" label="Browser Games" />
+          <Tab className="tab" label="Landing Pages" />
         </Tabs>
       </Box>
 
