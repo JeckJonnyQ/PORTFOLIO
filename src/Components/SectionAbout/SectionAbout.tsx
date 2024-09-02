@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import './SectionAbout.scss';
+import AuthorPhoto from '../../assets/images/Vladislav.png';
 
-import AuthorPhoto from '../../assets/images/Photo.png';
 import { contactInfo, aboutInfo, contactData } from '../../helpers/staticDataAbout';
 
 function SectionAbout(): ReactElement {

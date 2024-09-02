@@ -7,8 +7,6 @@ import { SocialIcons } from '../../helpers/staticDataFooter';
 function SectionHome(): ReactElement {
   return (
     <div className="home" id="home">
-      {/* <div className="background"></div> */}
-
       <div className="home-social">
         {SocialIcons.map((item) => (
           <a key={item.id} href={item.href} className="home-social__link" target="_blank">
