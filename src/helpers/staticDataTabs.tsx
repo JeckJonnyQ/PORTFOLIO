@@ -6,6 +6,7 @@ import Puzzle from '../assets/images/Puzzle.png';
 import Nonograms from '../assets/images/Nonograms.png';
 import Hangman from '../assets/images/Hangman.png';
 
+import TravelBeach from '../assets/images/TravelBeach.png';
 import BurgerLanding from '../assets/images/BurgerHouse.png';
 import ReyNegro from '../assets/images/ReyNegro.png';
 
@@ -110,6 +111,16 @@ export const TabsData: TabsDataProps[][] = [
   [
     {
       id: 7,
+      name: 'TravelBeach',
+      description:
+        'The landing page, presenting a collection of stunning beaches, was created with an emphasis on convenient and intuitive navigation, animation that is pleasing to the user’s eye, as well as a catalog for quickly and conveniently selecting the ideal vacation spot.',
+      link: 'https://jeckjonnyq.github.io/Travel-Beaches/',
+      photo: TravelBeach,
+      year: '2024',
+      skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'Vite', 'AoS Animate', 'React-scroll', 'Swiper Slayder'],
+    },
+    {
+      id: 8,
       name: 'BurgerHouse',
       description:
         'The landing page, presenting a wide range of juicy burgers, is designed with easy and intuitive design navigation and a detailed menu for quick and easy ordering.',
@@ -119,7 +130,7 @@ export const TabsData: TabsDataProps[][] = [
       skills: ['HTML', 'CSS', 'JavaScript', 'Figma', 'GitHub'],
     },
     {
-      id: 8,
+      id: 9,
       name: 'ReyNegro',
       description:
         'A small and colorful landing page with unobtrusive and soft animation for advertising and selling coffee beans on various platforms.',
@@ -128,14 +139,5 @@ export const TabsData: TabsDataProps[][] = [
       year: 'October 2023',
       skills: ['HTML', 'SCSS', 'WOW.js', 'Figma', 'GitHub'],
     },
-    // {
-    //   id: 9,
-    //   name: 'BurgerHouse',
-    //   description: 'Это сайт про бургеры',
-    //   link: 'https://jeckjonnyq.github.io/Burger-Landing/',
-    //   photo: BurgerLanding,
-    //   year: '2023',
-    //   skills: ['HTML', 'CSS', 'JavaScript'],
-    // },
   ],
 ];
